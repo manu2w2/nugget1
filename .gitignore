@@ -1,0 +1,30 @@
+# Godot-specific
+.godot/.import/
+.godot/.export/
+.godot/.mono/
+.godot/shader_cache/
+.godot/editor/
+.godot/uid_cache.bin
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Backup files
+*.tmp
+*.bak
+*.old
+*.orig
+
+# VSCode / JetBrains (optional)
+.vscode/
+.idea/
+
+# Builds
+*.exe
+*.apk
+*.pck
+*.zip
