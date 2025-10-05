@@ -64,6 +64,7 @@ size = Vector2(344.5, 929)
 scale = Vector2(0.1, 0.1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+modulate = Color(2.6718633, 2.5511472, 1.3149297, 1)
 sprite_frames = SubResource("SpriteFrames_hfdel")
 animation = &"exclamation mark"
 
