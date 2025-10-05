@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://qtrr32dyx6o2"]
+
+[ext_resource type="Texture2D" uid="uid://bwjm5nnvjw8b0" path="res://ExclamationMark_grayscale.png" id="1_qspxi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10jsa"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(0, 0, 311, 316)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ton4c"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(311, 0, 311, 316)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx2bi"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(622, 0, 311, 316)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mb0w6"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(0, 316, 311, 316)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6exv"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(311, 316, 311, 316)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rnnv"]
+atlas = ExtResource("1_qspxi")
+region = Rect2(622, 316, 311, 316)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hfdel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10jsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ton4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx2bi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mb0w6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6exv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rnnv")
+}],
+"loop": true,
+"name": &"exclamation mark",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qspxi"]
+radius = 164.01219
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oclvg"]
+size = Vector2(344.5, 929)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(0.1, 0.1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+sprite_frames = SubResource("SpriteFrames_hfdel")
+animation = &"exclamation mark"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_qspxi")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2(-1.25, 294)
+shape = SubResource("RectangleShape2D_oclvg")

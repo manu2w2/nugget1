@@ -1,18 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsyes3oyj5w1x"]
+[gd_scene load_steps=5 format=3 uid="uid://dsyes3oyj5w1x"]
 
 [ext_resource type="Texture2D" uid="uid://b0n7fcy2utf8g" path="res://sprites/Blue_PICKUP_CLEAN_All_012.png" id="1_iqk3k"]
+[ext_resource type="Script" uid="uid://bitn65h8okrnq" path="res://static_body_2d.gd" id="1_weqpt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_weqpt"]
 size = Vector2(34, 67)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_amdaw"]
+size = Vector2(42, 73)
+
 [node name="Node2D" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="pickup" type="StaticBody2D" parent="."]
 position = Vector2(0, 5)
+script = ExtResource("1_weqpt")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="pickup"]
 texture = ExtResource("1_iqk3k")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickup"]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_weqpt")
+
+[node name="Area2D" type="Area2D" parent="pickup"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickup/Area2D"]
+position = Vector2(5, 7.5)
+shape = SubResource("RectangleShape2D_amdaw")
