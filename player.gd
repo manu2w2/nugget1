@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Velocidad del personaje (puedes cambiarla para que camine más rápido o más lento)
-@export var speed: float = 120.0
+@export var speed: float = 200.0
 
 # Conectamos el nodo AnimatedSprite2D
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
