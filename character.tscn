@@ -111,7 +111,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lpiy1"]
-size = Vector2(24, 12)
+size = Vector2(22, 12)
 
 [node name="Node2D" type="Node2D"]
 
@@ -125,3 +125,12 @@ animation = &"Derecha"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2(1, 26)
 shape = SubResource("RectangleShape2D_lpiy1")
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(2, 2)
+limit_left = -16
+limit_top = -5
+limit_right = 1100
+limit_bottom = 1113
+limit_smoothed = true
+position_smoothing_enabled = true
