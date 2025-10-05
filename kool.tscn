@@ -1639,7 +1639,9 @@ texture_region_size = Vector2i(32, 32)
 4:2/0 = 0
 4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 12.426601, -16, 12.745232, 16, -16, 16)
 5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 1.2745247, 16, 0.95589066, 16, 16, -16, 16)
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0.31863022, 16, 0.63726044, 16, 16, -16, 16)
 7:2/0 = 0
 8:2/0 = 0
 9:2/0 = 0
@@ -1660,7 +1662,9 @@ texture_region_size = Vector2i(32, 32)
 4:3/0 = 0
 4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 12.426601, -16, 12.745232, 16, -16, 16)
 5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:3/0 = 0
 8:3/0 = 0
 9:3/0 = 0
@@ -1805,9 +1809,13 @@ texture_region_size = Vector2i(32, 32)
 3:11/0 = 0
 3:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:11/0 = 0
+5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:11/0 = 0
+6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:11/0 = 0
+7:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 8:11/0 = 0
 9:11/0 = 0
 10:11/0 = 0
@@ -1821,9 +1829,13 @@ texture_region_size = Vector2i(32, 32)
 2:12/0 = 0
 3:12/0 = 0
 4:12/0 = 0
+4:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:12/0 = 0
+5:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:12/0 = 0
+6:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:12/0 = 0
+7:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 8:12/0 = 0
 9:12/0 = 0
 10:12/0 = 0
@@ -1837,9 +1849,13 @@ texture_region_size = Vector2i(32, 32)
 2:13/0 = 0
 3:13/0 = 0
 4:13/0 = 0
+4:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:13/0 = 0
+5:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:13/0 = 0
+6:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:13/0 = 0
+7:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 8:13/0 = 0
 9:13/0 = 0
 10:13/0 = 0
@@ -1857,9 +1873,13 @@ texture_region_size = Vector2i(32, 32)
 3:14/0 = 0
 3:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:14/0 = 0
+4:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:14/0 = 0
+5:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 6:14/0 = 0
+6:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 7:14/0 = 0
+7:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 8:14/0 = 0
 9:14/0 = 0
 10:14/0 = 0
@@ -1877,9 +1897,13 @@ texture_region_size = Vector2i(32, 32)
 3:15/0 = 0
 3:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:15/0 = 0
+4:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 5.5756207, -16, 5.036045)
 5:15/0 = 0
+5:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 5.5756207, -16, 5.036045)
 6:15/0 = 0
+6:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 5.5756207, -16, 5.036045)
 7:15/0 = 0
+7:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 5.5756207, -16, 5.036045)
 8:15/0 = 0
 9:15/0 = 0
 10:15/0 = 0
@@ -2418,15 +2442,15 @@ tile_map_data = PackedByteArray("AAAHAAEABQAFAAAAAAAHAAIABQAEAAEAAAAHAAMABQAEAAE
 tile_set = SubResource("TileSet_c8y8t")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAbAAIAAAAEAAsAAAAbAAMAAAAEAAwAAAAbAAQAAAAEAA0AAAAbAAUAAAAEAA4AAAAbAAYAAAAEAA8AAAAcAAIAAAAFAAsAAAAcAAMAAAAFAAwAAAAcAAQAAAAFAA0AAAAcAAUAAAAFAA4AAAAcAAYAAAAFAA8AAAAdAAIAAAAGAAsAAAAdAAMAAAAGAAwAAAAdAAQAAAAGAA0AAAAdAAUAAAAGAA4AAAAdAAYAAAAGAA8AAAAeAAIAAAAHAAsAAAAeAAMAAAAHAAwAAAAeAAQAAAAHAA0AAAAeAAUAAAAHAA4AAAAeAAYAAAAHAA8AAAAIAAAAAAAFAAcAAAAIAAEAAAAFAAgAAAAIAAIAAAAFAAkAAAAJAAAAAAAGAAcAAAAJAAEAAAAGAAgAAAAbAA0AAAAAAA4AAAAbAA4AAAAAAA8AAAAcAA0AAAABAA4AAAAcAA4AAAABAA8AAAAdAA0AAAACAA4AAAAdAA4AAAACAA8AAAAeAA0AAAADAA4AAAAeAA4AAAADAA8AAAAbAAkAAAAAAAgAAAAbAAoAAAAAAAkAAAAbAAsAAAAAAAoAAAAbAAwAAAAAAAsAAAAcAAkAAAABAAgAAAAcAAoAAAABAAkAAAAcAAsAAAABAAoAAAAcAAwAAAABAAsAAAAdAAkAAAACAAgAAAAdAAoAAAACAAkAAAAdAAsAAAACAAoAAAAdAAwAAAACAAsAAAAeAAkAAAADAAgAAAAeAAoAAAADAAkAAAAeAAsAAAADAAoAAAAeAAwAAAADAAsAAAA=")
+tile_map_data = PackedByteArray("AAAbAAIAAAAEAAsAAAAbAAMAAAAEAAwAAAAbAAQAAAAEAA0AAAAbAAUAAAAEAA4AAAAbAAYAAAAEAA8AAAAcAAIAAAAFAAsAAAAcAAMAAAAFAAwAAAAcAAQAAAAFAA0AAAAcAAUAAAAFAA4AAAAcAAYAAAAFAA8AAAAdAAIAAAAGAAsAAAAdAAMAAAAGAAwAAAAdAAQAAAAGAA0AAAAdAAUAAAAGAA4AAAAdAAYAAAAGAA8AAAAeAAIAAAAHAAsAAAAeAAMAAAAHAAwAAAAeAAQAAAAHAA0AAAAeAAUAAAAHAA4AAAAeAAYAAAAHAA8AAAAIAAAAAAAFAAcAAAAIAAEAAAAFAAgAAAAIAAIAAAAFAAkAAAAJAAAAAAAGAAcAAAAJAAEAAAAGAAgAAAAbAA0AAAAAAA4AAAAbAA4AAAAAAA8AAAAcAA0AAAABAA4AAAAcAA4AAAABAA8AAAAdAA0AAAACAA4AAAAdAA4AAAACAA8AAAAeAA0AAAADAA4AAAAeAA4AAAADAA8AAAAbAAkAAAAAAAgAAAAbAAoAAAAAAAkAAAAbAAsAAAAAAAoAAAAbAAwAAAAAAAsAAAAcAAkAAAABAAgAAAAcAAoAAAABAAkAAAAcAAsAAAABAAoAAAAcAAwAAAABAAsAAAAdAAkAAAACAAgAAAAdAAoAAAACAAkAAAAdAAsAAAACAAoAAAAdAAwAAAACAAsAAAAeAAkAAAADAAgAAAAeAAoAAAADAAkAAAAeAAsAAAADAAoAAAAeAAwAAAADAAsAAAAOAAQAAAAFAAIAAAAOAAUAAAAFAAMAAAAPAAQAAAAGAAIAAAAPAAUAAAAGAAMAAAA=")
 tile_set = SubResource("TileSet_0blww")
 
 [node name="Pickup" parent="." instance=ExtResource("5_r0jyt")]
 position = Vector2(74, 89)
 scale = Vector2(2, 2)
 
-[node name="Node2D" parent="." instance=ExtResource("6_3rd7e")]
+[node name="Tarea" parent="." instance=ExtResource("6_3rd7e")]
 position = Vector2(330, 30)
 
-[node name="Node2D2" parent="." instance=ExtResource("7_mjk2g")]
+[node name="player" parent="." instance=ExtResource("7_mjk2g")]
 position = Vector2(180, 139)

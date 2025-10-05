@@ -49,7 +49,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"exclamation mark",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qspxi"]
@@ -67,6 +67,7 @@ scale = Vector2(0.1, 0.1)
 modulate = Color(2.6718633, 2.5511472, 1.3149297, 1)
 sprite_frames = SubResource("SpriteFrames_hfdel")
 animation = &"exclamation mark"
+frame_progress = 0.6639376
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("CircleShape2D_qspxi")
