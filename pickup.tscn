@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsyes3oyj5w1x"]
+
+[ext_resource type="Texture2D" uid="uid://b0n7fcy2utf8g" path="res://sprites/Blue_PICKUP_CLEAN_All_012.png" id="1_iqk3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_weqpt"]
+size = Vector2(34, 67)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("1_iqk3k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_weqpt")
