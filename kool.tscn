@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://6u7v4xiypt5w"]
+[gd_scene load_steps=26 format=4 uid="uid://6u7v4xiypt5w"]
 
 [ext_resource type="Texture2D" uid="uid://by4hprnlo3yj5" path="res://sprites/vectoraith_tileset_farming_sim_essentials/32x32/Tilesets (Modular)/vectoraith_tileset_farmingsims_buildings_32x32.png" id="1_o3dqo"]
 [ext_resource type="Texture2D" uid="uid://bhcljgss4c30g" path="res://tileset/vectoraith_tileset_farmingsims_terrain_A5_spring_32x32.png" id="2_r0jyt"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://dsyes3oyj5w1x" path="res://pickup.tscn" id="5_r0jyt"]
 [ext_resource type="PackedScene" uid="uid://qtrr32dyx6o2" path="res://exclamationmark.tscn" id="6_3rd7e"]
 [ext_resource type="PackedScene" uid="uid://dobok873xq21f" path="res://character.tscn" id="7_mjk2g"]
+[ext_resource type="Script" uid="uid://4tuaxnvtgsyy" path="res://Scripts/portal.gd" id="8_q1m4p"]
+[ext_resource type="PackedScene" uid="uid://47avsp8vw7og" path="res://map.tscn" id="9_q1m4p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48y76"]
 texture = ExtResource("1_o3dqo")
@@ -2431,6 +2433,9 @@ sources/0 = SubResource("TileSetAtlasSource_lauxi")
 sources/4 = SubResource("TileSetAtlasSource_m1721")
 sources/5 = SubResource("TileSetAtlasSource_ohqmc")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1m4p"]
+size = Vector2(85, 144)
+
 [node name="Kool" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -2446,7 +2451,7 @@ tile_map_data = PackedByteArray("AAAbAAIAAAAEAAsAAAAbAAMAAAAEAAwAAAAbAAQAAAAEAA0
 tile_set = SubResource("TileSet_0blww")
 
 [node name="Pickup" parent="." instance=ExtResource("5_r0jyt")]
-position = Vector2(74, 89)
+position = Vector2(74, 86)
 scale = Vector2(2, 2)
 
 [node name="Tarea" parent="." instance=ExtResource("6_3rd7e")]
@@ -2454,3 +2459,11 @@ position = Vector2(330, 30)
 
 [node name="player" parent="." instance=ExtResource("7_mjk2g")]
 position = Vector2(180, 139)
+
+[node name="TruckReturn" type="Area2D" parent="."]
+script = ExtResource("8_q1m4p")
+next_scene = ExtResource("9_q1m4p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TruckReturn"]
+position = Vector2(83.5, 110)
+shape = SubResource("RectangleShape2D_q1m4p")

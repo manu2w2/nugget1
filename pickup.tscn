@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsyes3oyj5w1x"]
+[gd_scene load_steps=7 format=3 uid="uid://dsyes3oyj5w1x"]
 
 [ext_resource type="Texture2D" uid="uid://b0n7fcy2utf8g" path="res://sprites/Blue_PICKUP_CLEAN_All_012.png" id="1_iqk3k"]
 [ext_resource type="Script" uid="uid://bitn65h8okrnq" path="res://static_body_2d.gd" id="1_weqpt"]
+[ext_resource type="Script" uid="uid://4tuaxnvtgsyy" path="res://Scripts/portal.gd" id="3_0tmqx"]
+[ext_resource type="PackedScene" uid="uid://47avsp8vw7og" path="res://map.tscn" id="4_0tmqx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_weqpt"]
 size = Vector2(34, 67)
@@ -23,6 +25,8 @@ position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_weqpt")
 
 [node name="Area2D" type="Area2D" parent="pickup"]
+script = ExtResource("3_0tmqx")
+next_scene = ExtResource("4_0tmqx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pickup/Area2D"]
 position = Vector2(5, 7.5)

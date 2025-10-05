@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://47avsp8vw7og"]
+[gd_scene load_steps=17 format=4 uid="uid://47avsp8vw7og"]
 
 [ext_resource type="Texture2D" uid="uid://bhcljgss4c30g" path="res://tileset/vectoraith_tileset_farmingsims_terrain_A5_spring_32x32.png" id="1_c7s6e"]
 [ext_resource type="Texture2D" uid="uid://by4hprnlo3yj5" path="res://sprites/vectoraith_tileset_farming_sim_essentials/32x32/Tilesets (Modular)/vectoraith_tileset_farmingsims_buildings_32x32.png" id="1_e0an3"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://47jqgqp4iopv" path="res://sprites/vectoraith_tileset_farming_sim_essentials/32x32/Tilesets (Modular)/vectoraith_tileset_farmingsims_crops_dense_spring_32x32.png" id="3_iw27f"]
 [ext_resource type="Texture2D" uid="uid://ccwu3e3rji0ul" path="res://sprites/vectoraith_tileset_farming_sim_essentials/32x32/Tilesets (Modular)/vectoraith_tileset_farmingsims_details_spring_32x32.png" id="4_71pa8"]
 [ext_resource type="PackedScene" uid="uid://dsyes3oyj5w1x" path="res://pickup.tscn" id="5_urblq"]
+[ext_resource type="Script" uid="uid://4tuaxnvtgsyy" path="res://Scripts/portal.gd" id="6_71pa8"]
+[ext_resource type="PackedScene" uid="uid://6u7v4xiypt5w" path="res://kool.tscn" id="7_05x41"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_iw27f"]
 tile_data = PackedInt32Array(65536, 0, 1, 131072, 0, 2, 196608, 0, 3, 262144, 0, 4, 327680, 0, 5, 1, 65536, 0, 65537, 65536, 1, 131073, 65536, 2, 196609, 65536, 3, 262145, 65536, 4, 327681, 65536, 5, 2, 131072, 0, 65538, 131072, 1, 131074, 131072, 2, 196610, 131072, 3, 262146, 131072, 4, 327682, 131072, 5, 3, 196608, 0, 65539, 196608, 1, 131075, 196608, 2, 196611, 196608, 3, 262147, 196608, 4, 327683, 196608, 5, 65540, 262144, 1, 131076, 262144, 2, 196612, 262144, 3, 262148, 262144, 4, 327684, 262144, 5)
@@ -861,6 +863,9 @@ sources/5 = SubResource("TileSetAtlasSource_gqbix")
 pattern_0 = SubResource("TileMapPattern_iw27f")
 pattern_1 = SubResource("TileMapPattern_71pa8")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05x41"]
+size = Vector2(70, 139.5)
+
 [node name="Home" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -871,13 +876,28 @@ tile_set = SubResource("TileSet_e0an3")
 position = Vector2(296, 143)
 scale = Vector2(2, 2)
 
+[node name="Node2D" parent="pickup" instance=ExtResource("5_urblq")]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="pickup"]
+position = Vector2(-148, -71.5)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("6_71pa8")
+next_scene = ExtResource("7_05x41")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickup/Area2D"]
+position = Vector2(299, 156.75)
+shape = SubResource("RectangleShape2D_05x41")
+
+[node name="Node2D2" parent="pickup" instance=ExtResource("5_urblq")]
+
 [node name="TileMapLayer3" type="TileMapLayer" parent="."]
 z_index = 1
 position = Vector2(1, 0)
 tile_map_data = PackedByteArray("AAADAAIAAAAAAAEAAAADAAMAAAAAAAIAAAADAAQAAAAAAAMAAAADAAUAAAAAAAQAAAADAAYAAAAAAAUAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAAEAAMAAAABAAIAAAAEAAQAAAABAAMAAAAEAAUAAAABAAQAAAAEAAYAAAABAAUAAAAFAAEAAAACAAAAAAAFAAIAAAACAAEAAAAFAAMAAAACAAIAAAAFAAQAAAACAAMAAAAFAAUAAAACAAQAAAAFAAYAAAACAAUAAAAGAAEAAAADAAAAAAAGAAIAAAADAAEAAAAGAAMAAAADAAIAAAAGAAQAAAADAAMAAAAGAAUAAAADAAQAAAAGAAYAAAADAAUAAAAHAAIAAAAEAAEAAAAHAAMAAAAEAAIAAAAHAAQAAAAEAAMAAAAHAAUAAAAEAAQAAAAHAAYAAAAEAAUAAAAYAAAAAAAIAAEAAAAYAAEAAAAIAAIAAAAYAAIAAAAIAAMAAAAYAAMAAAAIAAQAAAAYAAQAAAAIAAUAAAAYAAUAAAAIAAYAAAAYAAYAAAAIAAcAAAAZAAAAAAAJAAEAAAAZAAEAAAAJAAIAAAAZAAIAAAAJAAMAAAAZAAMAAAAJAAQAAAAZAAQAAAAJAAUAAAAZAAUAAAAJAAYAAAAZAAYAAAAJAAcAAAAaAP//AAAKAAAAAAAaAAAAAAAKAAEAAAAaAAEAAAAKAAIAAAAaAAIAAAAKAAMAAAAaAAMAAAAKAAQAAAAaAAQAAAAKAAUAAAAaAAUAAAAKAAYAAAAaAAYAAAAKAAcAAAAbAP//AAALAAAAAAAbAAAAAAALAAEAAAAbAAEAAAALAAIAAAAbAAIAAAALAAMAAAAbAAMAAAALAAQAAAAbAAQAAAALAAUAAAAbAAUAAAALAAYAAAAbAAYAAAALAAcAAAAcAP//AAAMAAAAAAAcAAAAAAAMAAEAAAAcAAEAAAAMAAIAAAAcAAIAAAAMAAMAAAAcAAMAAAAMAAQAAAAcAAQAAAAMAAUAAAAcAAUAAAAMAAYAAAAcAAYAAAAMAAcAAAAdAAAAAAANAAEAAAAdAAEAAAANAAIAAAAdAAIAAAANAAMAAAAdAAMAAAANAAQAAAAdAAQAAAANAAUAAAAdAAUAAAANAAYAAAAdAAYAAAANAAcAAAAeAAAAAAAOAAEAAAAeAAEAAAAOAAIAAAAeAAIAAAAOAAMAAAAeAAMAAAAOAAQAAAAeAAQAAAAOAAUAAAAeAAUAAAAOAAYAAAAeAAYAAAAOAAcAAAA=")
 tile_set = SubResource("TileSet_e0an3")
 
-[node name="player" parent="." instance=ExtResource("2_wijl4")]
+[node name="player" parent="." groups=["player"] instance=ExtResource("2_wijl4")]
 z_index = 1
 position = Vector2(67, 61)
 
